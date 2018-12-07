@@ -1,0 +1,32 @@
+{
+  "name": "select-all",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "clean-data": "node clean-data.js",
+    "download-uris": "node download-paragraph-uris.js",
+    "download-text": "node download-paragraph-text.js",
+    "clean-text": "node clean-paragraph-text.js",
+    "build-markov": "node build-markov.js",
+    "bootstrap": "npm run clean-data && npm run download-uris"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "del": "^3.0.0",
+    "html-entities": "^1.2.1",
+    "lodash": "^4.17.4",
+    "mongoist": "^1.5.0",
+    "promised-mongo": "^1.2.0",
+    "prompt-sync": "^4.1.5",
+    "request": "^2.83.0",
+    "request-promise": "^4.2.2",
+    "rita": "^1.2.12",
+    "striptags": "^3.1.0",
+    "to-utf-8": "^1.3.0",
+    "unescape": "^1.0.1"
+  }
+}
